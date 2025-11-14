@@ -54,6 +54,9 @@ doc = [
     "Sphinx>=1.8.2",
 ]
 
+[project.scripts]
+genproto = "_genproto:main"
+
 [tool.isort]
 profile = "black"
 
@@ -72,4 +75,5 @@ skips = ["tests/*.py"]
 [tool.pydocstyle]
 convention = "pep257"
 
-[tool.setuptools_scm]
+[tool.setuptools]
+py-modules = ["_genproto"]
