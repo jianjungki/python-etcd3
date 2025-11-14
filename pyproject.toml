@@ -15,7 +15,7 @@ authors = [
 dependencies = [
     "grpcio>=1.76.0rc1",
     "protobuf>=6.33",
-    "six==1.16.0",
+    "six==1.17.0",
 ]
 classifiers = [
     "Development Status :: 2 - Pre-Alpha",
