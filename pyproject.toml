@@ -78,5 +78,8 @@ convention = "pep257"
 [tool.setuptools]
 py-modules = ["_genproto"]
 
+package-dir = {"" = "src"}
+packages = ["etcd3", "etcd3.etcdrpc"]
+
 [tool.setuptools_scm]
 write_to = "src/etcd3/_version.py"
