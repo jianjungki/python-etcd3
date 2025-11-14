@@ -1,4 +1,8 @@
-from importlib import metadata
+try:
+    from ._version import version as __version__
+except ImportError:
+    __version__ = "0.0.0"
+
 import etcd3.etcdrpc as etcdrpc
 from etcd3.client import Endpoint
 from etcd3.client import Etcd3Client
@@ -9,8 +13,6 @@ from etcd3.exceptions import Etcd3Exception
 from etcd3.leases import Lease
 from etcd3.locks import Lock
 from etcd3.members import Member
-
-__version__ = metadata.version("etcd3")
 __author__ = "Louis Taylor"
 __email__ = "louis@kragniz.eu"
 
